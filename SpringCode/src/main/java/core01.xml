@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mypen" class="springCore.Pen"></bean>
+	
+	<bean id="mycar" class="setterInjection.Car">
+	<property name="id" value="101"></property>
+	<property name="name" value="Laudi"></property>
+	<property name="price" value="5000"></property>
+	</bean>
+	
+	<bean id="mycar1" class="setterInjection.Car">
+	<property name="id" value="102"></property>
+	<property name="name" value="BariLaudi"></property>
+	<property name="price" value="15000"></property>
+	</bean>
+	
+	
+    <!-- bean definitions here -->
+
+</beans>

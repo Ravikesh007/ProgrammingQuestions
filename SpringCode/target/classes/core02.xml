@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="mymobile" class="dependencyInjectionWithSetterInjection.Mobile">
+        <property name="id" value="101"></property>
+        <property name="name" value="samsung"></property>
+        <property name="model" value="M31"></property>
+        <property name="s" ref="mysim"></property>
+        </bean>
+        
+        <bean id="mysim" class="dependencyInjectionWithSetterInjection.Sim">
+        <property name="id" value="1"></property>
+        <property name="brand" value="Airtel"></property>
+        <property name="type" value="5G"></property>
+        
+        </bean>
+        
+        <bean id="myTelevision" class="dependencyInjectionWithSetterInjection.Television">
+        	<property name="remote" ref="myRemote"></property>
+        </bean>
+        
+        <bean id="myRemote" class="dependencyInjectionWithSetterInjection.Remote"></bean>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+</beans>
